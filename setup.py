@@ -15,7 +15,7 @@ long_description = "\n" + open(os.path.join(this_dir, 'README.rst')).read()
 setup(
     name='sqlalchemy_sql_shell',
     version='0.0.0',
-    description=('Do simple SQL queries to any database supported by SQLAlchemy'),
+    description=('A shell for doing simple SQL queries to any database supported by SQLAlchemy'),
     long_description=long_description,
     keywords='database, SQL, SQLAlchemy',
     author='Marc Abramowitz',
