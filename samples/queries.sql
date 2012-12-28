@@ -1,0 +1,3 @@
+SELECT 1 + 2;
+SELECT 3 + 4;
+SELECT 5 + 6;

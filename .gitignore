@@ -1,0 +1,6 @@
+.tox
+*.pyc
+*.egg
+*.egg-info
+*.venv
+pymssql-macos-lion/
