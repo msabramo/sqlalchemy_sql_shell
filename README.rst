@@ -11,6 +11,8 @@ The program takes one argument: a SQLAlchemy database URL of the form:
 more info). You may need to install additional packages for your database
 driver of choice (e.g.: mysql-python, psycopg2, pymssql, etc.)
 
+Here's some basic usage::
+
     $ sqlalchemy_sql_shell
     usage: sqlalchemy_sql_shell [-h] url
     sqlalchemy_sql_shell: error: too few arguments
@@ -28,7 +30,7 @@ driver of choice (e.g.: mysql-python, psycopg2, pymssql, etc.)
     | Guido      | van Rossum |
     +------------+------------+
 
-Multi-line queries are supported; A semi-colon signifies the end of the query:
+Multi-line queries are supported; A semi-colon signifies the end of the query::
 
     SQL> SELECT *
     ...> FROM people
@@ -41,7 +43,7 @@ Multi-line queries are supported; A semi-colon signifies the end of the query:
     | Guido      | van Rossum |
     +------------+------------+
 
-You can also pipe queries into the command for quick one-liners:
+You can also pipe queries into the command for quick one-liners::
 
     $ echo "SELECT 1 + 2;" | sqlalchemy_sql_shell sqlite:///
     +-------+
@@ -50,7 +52,7 @@ You can also pipe queries into the command for quick one-liners:
     | 3     |
     +-------+
 
-Or redirect stdin:
+Or redirect stdin::
 
     $ cat samples/queries.sql
     SELECT 1 + 2;
