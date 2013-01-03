@@ -33,6 +33,13 @@ import sqlalchemy
 from texttable import Texttable
 
 
+def get_input(prompt):
+    if sys.version_info < (3, ):
+        return raw_input(prompt)
+    else:
+        return input(prompt)
+
+
 def get_query():
     lines = []
 
@@ -42,7 +49,7 @@ def get_query():
         prompt = ''
 
     while True:
-        input_line = raw_input(prompt).strip()
+        input_line = get_input(prompt).strip()
         if len(input_line) == 0 and len(lines) == 0:
             return None
         lines.append(input_line)
