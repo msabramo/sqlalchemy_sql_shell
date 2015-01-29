@@ -1,6 +1,13 @@
 sqlalchemy_sql_shell
 ====================
 
+.. image:: https://pypip.in/version/sqlalchemy_sql_shell/badge.svg?style=flat
+    :target: https://pypi.python.org/pypi/sqlalchemy_sql_shell/
+    :alt: Latest Version
+
+.. image:: https://travis-ci.org/msabramo/sqlalchemy_sql_shell.png?branch=master
+        :target: https://travis-ci.org/msabramo/sqlalchemy_sql_shell
+
 Usage
 -----
 
